@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ :root{ 
+    --navbg : #90953B;
+    --hederbg : #78853F;
+    --hederbtn : #FFFF00;
+    --iconbg : #EEEDED;
+    --footerbg : #252525;
+}
+/*--------navber section start------*/
+.nav-item{
+    width: 100%;
+    height: 50px;
+    background-color: var(--navbg);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 170px;
+}
+.logo{
+    display: flex;
+}
+.logo h4{
+    margin-top: 14px;
+    color: #EEEDED;
+    font-weight: 700;
+    font-size: 20px;
+}
+.logo img{
+    width: 60px;
+    height: 40px;
+    margin-top: 3px;
+}
+.humburger{
+    display: none;
+}
+.navbars ul{
+    display: flex;
+}
+.navbars .active{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-underline-offset: 0.5rem;
+}
+.navbars ul li a{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.navbars ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: #FFFF00;
+    transition: 0.2s;
+}
+/*--------navber section end------*/
+/*--------header section start------*/
+.container-header{
+    width: 100%;
+    height: 100vh;
+
+}
+.full-header{
+    width: 100%;
+    height: 75vh;
+    background: var(--hederbg);
+}
+.mid-header{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.carousel-item{
+    height: 80vh;
+}
+.img-slider {
+    height: 100%;
+    width: 95%;
+    padding: 2%;
+    position: relative;
+    top: 50%;
+}
+.slider-text {
+    top: 25%;
+    left: 10% !important;
+    width: 35%;
+}
+.slider-text h3{
+    color: #FFFF00;
+    font-size: 20px;
+    margin-bottom: -2px;
+}
+.slider-text h1{
+    font-weight: 700;
+}
+.slider-text p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: yellow !important;
+}
+/* .carousel-dark .carousel-indicators [data-bs-target] ::after{
+    background-color: transparent !important;
+    border: 1px solid white !important;
+} */
+.caro-indicators{
+    right: 62% !important;
+    bottom: 20% !important;
+}
+
+.carosel-btn {
+    padding: 8px 15px;
+    background-color: #FFFF00;
+    border: none;
+    margin: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.carosel-btn:hover {
+    background-color: #fff;
+}
+/*--------header section end------*/
+/*--------offer section start------*/
+.offer-title h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600 !important;
+}
+.offer-title p{
+    font-size: 14px;
+}
+.offer-container{
+    margin-top: 3rem;
+}
+.padding-10{
+    padding: 0 175px;
+}
+.col-section{
+    width: 100%;
+}
+.card-img{
+    background-color: #EEEDED;
+    height: fit-content;
+}
+.card-img img{
+    width: 50px;
+    margin: 30px 45px;
+}
+.card-info{
+    font-size: 14px;
+    margin-left: 20px;
+}
+.card-info h6{
+    font-weight: 600;
+}
+/*--------offer section end------*/
+/*--------about section start------*/
+.about-section{
+    width: 45%;
+    height: 65vh;
+    background-image: url("../asset/about-img.jpg");
+    background-repeat: no-repeat;
+    background-color: #F7F7F7;
+}
+.about-info{
+    width: 55%;
+    background-color: #F7F7F7;
+    padding-top: 6rem;
+    padding-left: 2rem !important;
+}
+.about-info p{
+    width: 80%;
+}
+.about-info button{
+    padding: 8px 15px;
+    border: none;
+    background-color: #FFFF00;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.about-info button:hover{
+    background-color: white;
+    border: 1px solid gray;
+}
+/*--------about section end------*/
+/*--------feedback section start------*/
+.feedback-section{
+    text-align: center;
+    margin-top: 3rem;
+    height: 80vh;
+}
+.feedback-section h4{
+    font-weight: 600;
+}
+
+.items p{
+    width: 55%;
+    margin: 1rem auto;
+    font-size: 14px;
+}
+.items h4{
+    font-weight: 500;
+}
+.items-text{
+    font-weight: 500;
+    color: var(--navbg);
+}
+.carousel-control-prev {
+    left: 15% !important;
+    top: -30% !important;
+}
+.carousel-control-next {
+    right: 15% !important;
+    top: -30% !important;
+}
+.carousel-item i{
+    font-size: 50px;
+    color: var(--hederbg);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: var(--hederbg) !important;
+}
+.client-img{
+    width: 150px;
+    border: 3px solid var(--hederbg);
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+/*--------feedback section end------*/
+/*--------contact section start------*/
+.contact-section{
+    background-color: var(--navbg);
+    flex-direction: row;
+    height: 90vh !important;
+}
+.contact-container{
+    margin-top: 2.5rem;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+.contact-form input{
+    padding: 8px 100px;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    border: none;
+}
+.padding-11{
+    padding: 0 200px;
+}
+.input-msg{
+    padding: 60px 100px !important;
+    width: 50%;
+    border: none;
+}
+.contact-btn{
+    padding: 8px 40px !important;
+    width: fit-content;
+    text-align: start;
+
+}
+.contact-form button{
+    padding: 8px 20px;
+    width: 10%;
+}
+.btn2{
+    background-color: red;
+}
+.map-box{
+    margin-left: 3rem;
+}
+.img-contact{
+    border-radius: 30px;
+}
+.map{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #EEEDED;
+}
+.contact-title{
+    font-weight: 700;
+}
+/*--------contact section end------*/
+/*--------footer section start------*/
+.footer-section{
+    width: 100%;
+    height: 50hv;
+    padding-top: 6rem;
+    background-color: #252525;
+    color: white;
+}
+.newslatter{
+    text-align: center !important;
+    padding-left: 20% !important;
+}
+.newslatter-input{
+    margin: 0 auto;
+    padding-bottom: 40px;
+    z-index: 1;
+    
+}
+.newslatter-input input{
+    padding: 5px 130px;
+    margin-top: -5px;
+    border-radius: 30px;
+    position: absolute;
+    z-index: -1;
+    border: none;
+    background-color: white !important;
+    color: white;
+    margin-left: 7rem !important;
+}
+.newslatter-input button{
+    padding: 5px 40px;
+    border-radius: 30px;
+    margin-top: -5px;
+    margin-left: 395px;
+    border: none;
+    background-color: #FFFF00;
+}
+.footer-main{
+    gap: 2rem;
+}
+.logo-about img{
+    width: 200px;
+    margin-top: -37px;
+    margin-left: -20px;
+}

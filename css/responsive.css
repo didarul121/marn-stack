@@ -1,0 +1,78 @@
+@media only screen and (max-width: 1320px) {
+    /*------Navbar section------*/
+    .nav-item{
+        padding: 0 80px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+        /*------Navbar section------*/
+    .nav-item{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 750px) {
+        /*------Navbar section------*/
+    .humburger{
+        display: block;
+        cursor: pointer;
+        margin: auto 0;
+    }
+    .humburger .line{
+        width: 25px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin: 6px 0;
+    }
+    .navbars{
+        height: 0;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;    
+        width: 100vw;
+        background: var(--navbg);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .navbars.active{
+        height: 300px;
+    }
+    .navbars ul{
+        display: block;
+        width: fit-content;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .navbars.active ul{
+        opacity: 1;
+    }
+    .navbars ul li{
+        margin-bottom: 12px;
+    }
+    .full-header{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 840px){
+    .full-header{
+        height: 65vh;
+    }
+}
+@media only screen and (max-width: 750px){
+    .full-header{
+        height: 55vh;
+    }
+}
+@media only screen and (max-width: 650px){
+    .full-header{
+        height: 45vh;
+    }
+}
+@media only screen and (max-width: 500px){
+        /*------Navbar section------*/
+    .nav-item{
+        padding: 0 25px;
+    }
+}
