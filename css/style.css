@@ -119,7 +119,7 @@
 } */
 .caro-indicators{
     right: 62% !important;
-    bottom: 20% !important;
+    bottom: 15% !important;
 }
 
 .carosel-btn {
@@ -334,7 +334,7 @@
     padding: 5px 40px;
     border-radius: 30px;
     margin-top: -5px;
-    margin-left: 395px;
+    margin-left: 425px;
     border: none;
     background-color: #FFFF00;
 }
